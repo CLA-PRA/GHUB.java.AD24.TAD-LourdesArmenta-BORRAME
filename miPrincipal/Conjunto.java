@@ -19,26 +19,7 @@ public class Conjunto {
 	//añade un elemento si no está en el conjunto
 	public Conjunto añadir(Object elemento)
 	{
-		Conjunto c = new Conjunto();
-		if (!pertenece(elemento))
-		{
-			/*Verifica si hay posiciones libres
-			* en caso contrario amplia el conjunto
-			*/
-			if(cardinal ==capacidad)
-			{
-				Object [] nuevoCto;
-				nuevoCto = new Object[capacidad + M];
-				for(int k = 0;k<capacidad;k++)
-				nuevoCto[k] = cto[k];
-				capacidad += M;
-				cto = nuevoCto;
-				
-			}
-			cto[cardinal++] = elemento;
-			c.cto = cto;
-		}
-		return c;
+		//colocar aquí el codigo
 	}
 	//quita el elemento del conjunto
 
